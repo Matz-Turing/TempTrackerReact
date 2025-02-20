@@ -1,0 +1,144 @@
+/* Reseta o estilo básico para uma melhor personalização */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #121212;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  padding: 20px;
+}
+
+.app {
+  text-align: center;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  background-color: #333;
+  width: 100%;
+  max-width: 400px;  /* Reduz a largura máxima da aplicação */
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Estilo do título */
+h1 {
+  font-size: 1.5em;  /* Diminuindo o tamanho do título */
+  margin-bottom: 15px;
+  color: #ff1500;
+}
+
+/* Estilo das divs dos inputs */
+.input-group {
+  margin-bottom: 15px;  /* Menor espaçamento entre os campos */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* Estilo do rótulo de cada input */
+.input-group label {
+  margin-bottom: 5px;
+  font-size: 1em;
+  color: #ccc;
+}
+
+/* Estilo dos campos de entrada */
+.input-field {
+  background-color: #444;
+  border: none;
+  color: #fff;
+  padding: 8px;  /* Diminuindo o padding */
+  font-size: 1em;  /* Fonte um pouco menor */
+  width: 100%;
+  border-radius: 8px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.input-field:focus {
+  background-color: #555;
+  border: 2px solid #ff1500;
+}
+
+/* Estilo do gráfico */
+.chart-container {
+  margin-top: 15px;
+  width: 100%;
+  max-width: 350px;  /* Reduzindo o tamanho do gráfico */
+  height: 200px;  /* Reduzindo a altura do gráfico */
+  padding: 10px;
+}
+
+/* Rodapé */
+.footer {
+  margin-top: 15px;
+  font-size: 0.9em;
+  color: #ccc;
+  text-align: center;
+  padding: 10px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  width: 100%;
+}
+
+.footer strong {
+  color: #ff1500;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+  .app {
+    padding: 12px;
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 1.4em; /* Reduzindo o título ainda mais */
+  }
+
+  .input-field {
+    font-size: 0.95em;
+    padding: 7px;
+  }
+
+  .chart-container {
+    height: 180px;
+  }
+}
+
+@media (max-width: 480px) {
+  .app {
+    padding: 10px;
+    width: 100%;
+    margin: 0;
+  }
+
+  .input-field {
+    font-size: 0.9em;
+    padding: 6px;
+  }
+
+  .chart-container {
+    height: 170px; /* Ajustando para telas muito pequenas */
+  }
+
+  h1 {
+    font-size: 1.3em; /* Título ainda menor */
+  }
+
+  .input-group {
+    margin-bottom: 12px;
+  }
+}
